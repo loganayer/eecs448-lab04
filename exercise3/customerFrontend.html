@@ -1,0 +1,29 @@
+<html>
+	<head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="formChecker.js"></script>
+	</head>
+	<body>
+		<h3>Web Store</h3>
+		<form name="purchase" action="customerBackend.php" onsubmit="return checkForm()" method="post">
+			HTML Files ($2):
+			<input type="number" name="html" value="0" required><br>
+			CSS Files ($2):
+			<input type="number" name="css" value="0" required><br>
+			JS Files ($4):
+			<input type="number" name="js" value="0" required><br>
+			PHP Files ($5):
+			<input type="number" name="php" value="0" required><br><br>
+			Shipping options:<br>
+			<input type="radio" name="ship" value="over">Overnight($50):<br>
+			<input type="radio" name="ship" value="three">Three Day($5):<br>
+			<input type="radio" name="ship" value="seven" checked>Seven Day(Free):<br><br>
+			Username:
+			<input type="email" name="un"><br>
+			Password:
+			<input type="password" name="pa" required><br><br>
+			<button type="submit" value="Submit">Submit</button>
+			<button type="reset" value="Reset">Reset</button>
+		</form>
+	</body>
+</html>
